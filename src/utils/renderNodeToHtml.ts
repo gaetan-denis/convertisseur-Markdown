@@ -9,13 +9,13 @@ export function renderNodeToHtml(node: Node) : string {
 
     // Si le type est égal à h1, je retourne l'élément au format html <h1>
 
-    if(node.type==="H1"){
+    if(node.type==="h1"){
         return`<h1>${node.content}</h1>`
     }
 
     // Si le type est égal à h1, je retourne l'élément au format html <h2>
 
-    if(node.type==="H2"){
+    if(node.type==="h2"){
         return`<h2>${node.content}</h2>`
     }
     // Si le type est égal à h1, je retourne l'élément au format html <p>
