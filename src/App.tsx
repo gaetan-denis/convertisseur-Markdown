@@ -19,8 +19,8 @@ function App() {
   return (
       <div>
         <h1>Convertisseur Markdown</h1>
-        <textarea value={markdownText} onChange={handleChange} placeholder="Entrez votre markdown ici" rows={10} cols={50}/>
-        <textarea value={generateHtml()} rows={10} cols={50} readOnly/>
+        <textarea value={markdownText} onChange={handleChange} placeholder="Entrez votre markdown ici"/>
+        <textarea value={generateHtml()}  readOnly/>
 
       </div>
   )
