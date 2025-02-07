@@ -14,6 +14,9 @@ export function parseMarkdown(markdown: string): Node {
             currentParent=new Node("h1", line.trim().slice(2))
             root.addChild(currentParent);
         }else if(line.startsWith("##")){
+
+            // //TODO : vérifier le souci avec l'annotation ## qui reste en <h1>
+
             currentParent=new Node("h2", line.trim().slice(3))
             root.addChild(currentParent);
         }else if(line.trim()){
