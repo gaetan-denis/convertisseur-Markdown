@@ -9,7 +9,7 @@ export class Node {
         this.children = [];
     }
 
-    addChildren(child : Node){
+    addChild(child : Node){
         this.children.push(child);
     }
 
