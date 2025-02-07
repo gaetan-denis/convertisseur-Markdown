@@ -1,12 +1,13 @@
 import {parseMarkdown} from "./utils/MarkdownParser.ts";
 import {renderNodeToHtml} from "./utils/renderNodeToHtml.ts";
 import './App.css'
-import {TextareaHTMLAttributes, useState} from "react";
+import {useState} from "react";
+
 
 function App() {
   const[markdownText, setMarkdownText] = useState<string>("");
 
-  const handleChange = (event: React.ChangeEvent<TextareaHTMLAttributes<string>>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMarkdownText(event.target.value);
   }
 
